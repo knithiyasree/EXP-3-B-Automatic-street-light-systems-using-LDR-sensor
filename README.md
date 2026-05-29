@@ -11,7 +11,7 @@
 	Photoresistor
   
 ## Circuit Diagram:
-
+<img width="1038" height="660" alt="image" src="https://github.com/user-attachments/assets/849a9c56-c90b-4a63-ade9-6c512dde1456" />
 
 ## Theory :
 
@@ -65,11 +65,33 @@ o	The middle point (between LDR and resistor) connects to the Arduino analog inp
 •	Save the Circuit: Click "Save" to keep your circuit design and code for future use.
 
 ## Code:
+```
+int LDR = 0;
+void setup()
+{
+  pinMode(A5, INPUT);
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+}
 
+void loop()
+{
+  LDR = analogRead(A5);
+  if (LDR > 750) {
+    digitalWrite(13, HIGH);
+    Serial.println(LDR);
+  } else {
+    digitalWrite(13, LOW);
+    Serial.println(LDR);
+  }
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+```
 
 
 ## Output:
- 
+<img width="938" height="544" alt="image" src="https://github.com/user-attachments/assets/37e40e5b-3f86-4914-8485-4bf33c3794e0" />
 
 
 ## Result:
+Thus, Automatic-street-light-systems-using-LDR-sensor was successfully implemented using TinkerCad
