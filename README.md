@@ -1,4 +1,4 @@
-# EXP-3-B-Automatic-street-light-systems-using-LDR-sensor
+# EXP-Automatic-street-light-systems-using-LDR-sensor
 
 ## Aim: 
 
